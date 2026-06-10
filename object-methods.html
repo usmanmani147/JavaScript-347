@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object-Methods.html</title>
+</head>
+
+<body>
+
+
+    <li>
+        <h2>&nbsp;Object Methods:</h2>
+
+        <h3>&nbsp;Method 1:&nbsp;&nbsp;&nbsp; Object.keys() &nbsp;&nbsp;&nbsp;// yeh method object ke sari keys print
+            karta ha.</h3>
+        <pre>
+
+            Example:
+                    const student = {
+
+                    name : "usmanghani",
+                    age : 33,
+                    class : "learning",
+                    isPass : true,     
+                    };
+                
+                 
+                console.log(Object.keys(student));  // Object keys Method // Note "O" of Object will be capital.
+
+                // Output: ["name", "age", "class", "isPass"];
+
+                // Note:    Agr hum kisi specific key ko print karna chahte hain to.                
+
+                //console.log(student.name);        //  dot notation method to access specific key of object
+                //console.log(student.age);         
+                //console.log(student.class);       //  This method is easy to use 
+                //console.log(student.isPass);
+
+                //console.log(student["name"]);    
+                //console.log(student["age"]);
+                //console.log(student["class"]);
+                //console.log(student["isPass"]);
+
+        </pre>
+
+        <li>
+            
+            <h3>&nbsp;Method 2:&nbsp;&nbsp;&nbsp;  Object.values() &nbsp;&nbsp;&nbsp;// yeh method object ke  sari values print karta ha.</h3>
+            
+        </li>
+        <pre>
+            Example:    
+                    const student = {
+                    name : "usmanghani",
+                    age : 33,
+                    class : "learning",
+                    isPass : true,     
+                    };
+
+                console.log(Object.values(student));  // Object values Method // note "O" of object will be capital
+
+                // Output: ["usmanghani", 33, "learning", true];  
+
+        </pre>
+
+    <li>
+        <h3>&nbsp;Method 3:&nbsp;&nbsp;&nbsp; Object.entries() &nbsp;&nbsp;&nbsp;// yeh method object ke sari entries
+            print karta ha.</h3>
+    </li>
+    <pre>
+            Example:        
+                    const student = {
+                    name : "usmanghani",
+                    age : 33,
+                    class : "learning",
+                    isPass : true,     
+                    };
+
+                console.log(Object.entries(student));  // Object entries Method // note "O" of object will be capital
+
+                // Output: [["name", "usmanghani"], ["age", 33], ["class", "learning"], ["isPass", true]];
+            
+        </pre>
+
+
+
+    <li>
+        <h3>&nbsp;Method to change values of objects:</h3>
+    </li>
+
+    <pre>
+
+            Example:    
+                    const obj = {
+                    name : "usman",
+                    age : 33,
+                    class : "learning",
+                    isPass : true,     
+                    };  
+
+
+            obj.name = "ghani";     //1st method to modify the value of obj;
+
+            console.log(obj.name);
+
+            obj["age"] = 34;       //2nd method to modify the value of obj;
+
+            console.log(obj["age"]);
+
+            obj.name = obj.name + " ghani";     //3rd method to add value (without replacing existing) in object key (concatenation method)
+
+            obj.name += " ghani";               //same as up method but this is the short cut of up method. (assignment operator)
+
+        </pre>
+
+
+
+
+</body>
+
+</html>

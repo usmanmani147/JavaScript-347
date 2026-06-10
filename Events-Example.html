@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Example</title>
+</head>
+<body>
+
+    <div class="events-example">
+        <h1>Events Example:</h1>
+        <pre>
+            <b>Example:</b>    
+            
+                    
+                    let btn = document.querySelector(`#btn`);
+
+                    let mode = `light`;
+
+                    btn.addEventListener(`click`, ()=>{
+
+                        if (mode === `light`){
+
+                            mode = `dark`;
+                            document.querySelector(`body`).style.backgroundColor = `black`;
+                        }else {
+                            mode = `light`;
+                            document.querySelector(`body`).style.backgroundColor = `white`;
+
+                        }
+                        console.log(mode);
+                    });
+
+                    
+
+            <b>Example:</b>  
+            
+            
+                        //ab hum below example main hum without HTML and CSS k hum nay button bhe create kia hy DOM say, or styling bhe di hy.
+
+                        
+                        let button = document.createElement(`button`);
+                        button.innerText= `click me`;
+                        button.style.color = `blue`;
+                        button.style.backgroundColor = `yellow`;
+                        document.querySelector(`body`).append(button);
+                        let mode = `light`;
+                        button.addEventListener(`dblclick`,()=>{
+                            if (mode === `light`){
+                                mode = `dark`;
+                                document.querySelector(`body`).style.backgroundColor = `orange`;
+                            }else{
+                                mode = `light`;
+                                document.querySelector(`body`).style.backgroundColor = `black`;
+                            }
+                            console.log(mode);
+                        });
+
+                    
+
+        </pre>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_notes.html</title>
+    <link rel="stylesheet" href="CSS.css(js_notes).css">
+
+</head>
+
+<body>
+    <div class="topline">
+
+    <div class="navbar">
+
+        <div class="name">
+            <h2 class="myname">M.Usman Ghani</h2>
+        </div>
+
+        <form id="topsearch">
+            <input type="text" placeholder="Search...">
+            <button type="submit">
+                <p class="search">Search</p>
+            </button>
+        </form>
+
+    </div>
+
+    </div>
+   
+    <div class="header">
+
+        <H1 id="title">Welcome to JavaScript Language:</H1>
+
+    </div>
+    <div class="introduction">
+        <h2>"JavaScript is a programming language used to give instructions to the computer"</h2>
+    </div>
+    <h3 class="types"> Data Types:&nbsp;&nbsp;&nbsp;&nbsp;Primitives&nbsp;&nbsp; & &nbsp;&nbsp; Non-Primitives</h3>
+
+
+    <div class="primitives">
+        <br>
+        <br>
+        <h3 class="primitives-types">&nbsp;&nbsp;Primitives Data Types:<br><br>&nbsp;&nbsp;Number, String, Boolean, Undefined, Null, BigInt,
+            Symbol (7) </h3>
+        <ul>
+
+            <li> <b>Number:</b> // typeof "a" variable is a Number (number ka N capital otherwise error)
+                <pre>
+                let a = 5;
+                console.log(a);      
+                </pre>
+            </li>
+
+            <li> <b>String:</b> // typeof "fullName" is a string
+                <button id="btnsearch1">String Methods</button>
+                <pre>
+                let fullName = "usmanghani"     
+                console.log( fullName);
+                </pre>
+            </li>
+
+            <li> <b>Boolean:</b> // typeof "isFollow" is boolean
+                <pre>
+                let isFollow = true;
+                console.log(isFollow);      //true & false are the only two values of boolean data type.
+                </pre>
+            </li>
+
+            <li><b>Undefined:</b> // typeof "name" is undefined
+                <pre>
+                let name;
+                console.log(name);( value asign he na krna)
+                </pre>
+            </li>
+
+            <li><b>Null:</b> // typeof "fullName" is null
+                <pre>
+                let fullName = null;
+                jaan bujh kar khaali kiya gaya
+                </pre>
+            </li>
+
+            <li><b>BigInt:</b> // typeof "bigNumber" is BigInt (shows (n) with BigInt value)
+                <pre>
+                bohat bara number store karne wala type
+                </pre>
+            </li>
+
+            <li><b>Symbol:</b> // typeof "symbol" is Symbol
+                <pre>
+                Always use "S" capital in Symbol     (otherwise error occur)
+                unique identity / alag pehchan
+                </pre>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+
+    <div class="object">
+        
+        <br>
+        <br>
+        <h3>&nbsp;&nbsp;Types of non-primitives data types: (Objects, Arrays, Functions) </h3>
+
+        <h3>&nbsp;&nbsp;Types of non-primitives data types: </h3>
+
+        <ul>
+            <li>
+                <h3> Objects: Object related data aur functions ko ek hi container mein store karta hai. </h3>
+            </li>
+
+            <li>
+                <h3> Objects: </h3>
+
+            </li>
+
+            <pre>
+    Example:
+            const student = {
+
+            name : "usmanghani",
+            age : 33,
+            class : "learning",
+            isPass : true,
+                            };
+
+            </pre>
+            <li>
+                <h3>Object Methods:</h3>
+                <button id="btnsearch2">Object Methods</button>
+            </li>
+            <pre>
+
+
+
+            </pre>
+
+        </ul>
+    </div>
+
+    <div class="array">
+        <ul>
+            <li>
+                <h3> Arrays: </h3>
+            </li>
+        </ul>
+
+        <pre>
+            Array aik box ki tarah hota hai jis mein bohat sari values rakhi jati hain.
+
+            let array = [1,2,3];
+
+            let student = ["Usman","Maryam","Musfirah","Abreeah","Fatimah","Rehaan"];
+
+            Method to access the single value of array.
+
+            console.log (student[0]);
+            console.log (student[1]);
+            console.log (student[2]);
+            </pre>
+
+        <li>
+            <h3> Arrays Methods: </h3>
+            <button id="btnsearch3">Array Methods</button>
+        </li>
+        <br>
+    </div>
+
+    <div class="function">
+        <ul>
+            <li>
+                <h3> Functions: </h3>
+            </li>
+            <li>
+                <h3>Example of Function:</h3>
+            </li>
+        </ul>
+        <pre>
+            function myfun ()   {       (Here, function word make the fun and "myfun" is the name of fun)
+
+            console.log("JavaScript");  (Work inside the fun)
+
+                                }
+
+            myfun();                    (Here, we are calling the fun)
+
+
+            console.log(myfun);         (complete fun will be show in console "F12")
+            </pre>
+
+        <ul>
+            <li>
+                <h3>Note:</h3>
+
+                <h4>Without using parameters, we cannot use a function for different values or different tasks.</h4>
+
+                <h4> What is parameters ? (function with parameter)</h4>
+
+                <h4> Function name ke baad parentheses `()` ke andar parameters likhe jatay hain.</h4>
+
+            </li>
+
+            <li>
+                <h3>Example:</h3>
+            </li>
+
+        </ul>
+
+        <pre>
+
+            function myfun (name)   {       (Here, name is the parameter)
+
+            console.log("myname=",name);
+
+                                    }
+            
+            myfun("usman");      (We call the function "myfun" By using parameter, We have given the value (argument) as "usman" as an input.)    
+
+            Now we can use this fun by calling "myfun()" and we pass any value as argument.                        
+            </pre>
+        <div class="fun-in-obj">
+            <pre>
+            <ul><b><li>When a function is inside an object, it is called the method. Otherwise, it is just a function.</li></b></ul>
+            
+            <b>Example:</b>
+
+                    const student =     {
+                    name: "usman",
+                    age: 33,
+                    country: "Pakistan",
+                    hobby : "Web-development",
+
+            myfun: function(fullName)       {  <b> this fun is called method, Because it is object's fun.</b>
+
+                                        
+            console.log(this.hobby);            <b>Note:</b> "this" object kay function (method) ke andar use hota hai.      
+
+                                            };
+                                        };
+            student.myfun("UsmanGhani");
+
+            <b>Note: "this" keyword will be use with normal fun not with arrow fun.</b>
+
+            </pre>
+
+        </div>
+
+    </div>
+
+    <div class="arrowfun">
+
+        <ul>
+            <li>
+                <h3> Arrow Function: </h3>
+            </li>
+            <li>
+                <h3>Example of arrow function:</h3>
+            </li>
+        </ul>
+        <pre>
+
+
+            <b>Example:</b>
+
+                    const myfun = ()=>  {
+                    console.log("UsmanGhani")
+                                        }
+
+                    myfun();
+
+            <b>Example:</b>
+
+                    const myfun = (name1,name2)=>   {   (Here we pass two parameter "name1" , "name2")
+
+                    return name1 + " " +name2;          ( "" are used for space between usmanghani "usman ghani")
+
+                                                    };
+
+                    let result = myfun("Usman","Ghani");
+
+                    console.log(result);
+
+        </pre>
+        <ul>
+            <li>
+                <h3>"Return" Keyword:</h3>
+            </li>
+        </ul>
+
+        <pre>
+            "Return" keyword is used to return a value from a function. It is used to get the output of a function.
+
+            Example:
+
+                    function myfun (a,b){
+
+                    return a + b;      (Here, we are returning the sum of a and b)
+                                        }
+                    let result = myfun(5,10);     (Here, we are calling the function "myfun" and passing the values 5 and 10 as arguments.
+                    The result will be 15 because we are returning the sum of a and b.)
+                    console.log(result);     //Output will be 15.
+
+        <h3>Note: without return keyword, we cannot get the output of a function. we can only print the output of a function.</h3>
+
+        </pre>
+
+    </div>
+    <div class="arithmetic">
+        <h3>Types of Operators in JavaScript:</h3>
+
+        <ul>
+            <li>
+                <h3>Arithmetic Operators:</h3>
+            </li>
+        </ul>
+        <pre>
+    <b><ol>
+        <li> +      Addition Two operands</li>
+        <li> -      Subtraction Two operands</li>
+        <li>*       Multiplication Two operands</li>
+        <li>/       Division Two operands</li>
+        <li>%       Modulus Two operands</li>
+        <li>**      Exponentiation Two operands</li>
+        <li>++      Increment One operand        (Unary Operators) </li>
+        <li>--      Decrement One operand        (Unary Operators) </li>
+    </ol></b>
+
+    </pre>
+
+        <div class="arithmetic-asignment-operators">
+            <ul>
+                <li>
+                    <h3>Arithmetic Asignment Operators:</h3>
+                </li>
+            </ul>
+            <pre>
+    a += 4          a = a + 4
+
+    a -= 4          a = a - 4
+
+    a *= 4          a = a * 4
+
+    a /= 4          a = a / 4
+
+    a %= 4          a = a % 4
+
+    a**= 4          a = a **4
+                    </pre>
+
+        </div>
+    </div>
+
+    <div class="comparison-operators">
+
+        <ul>
+            <li>
+                <h3>Comparison-Operators: </h3>
+                <b>Note: Always give the result in boolean value. (true or false)</b>
+            </li>
+        </ul>
+
+        <pre>
+        <ul>
+
+            <li>     >      Greater than                 10 > 5      true   </li>
+            <li>     <      Less than                    3 < 8       true   </li> 
+            <li>     >=     Greater than or equal to     10 >= 10    true   </li> 
+            <li>     <=     Less than or equal to        4 <= 2      false  </li>
+            <li>     ==     Equal to (only value check)  5 == "5"    true   </li> 
+            <li>     !=     Not equal to                 5 != 8      true   </li> 
+            <li>     ===    Equal to and type check      5 === "5"   false  </li> 
+            <li>     !==    Not equal to and type check  5 !== "5"   true   </li> 
+              
+        </ul>
+    </pre>
+
+    </div>
+    <div class="logical-operators">
+        <ul>
+            <li>
+                <h3>Logical Operators:</h3>
+            </li>
+        </ul>
+
+
+        <pre>
+            <ul>
+                <li><b>Logical operators:</b></li>
+
+                <li><b>logical AND    &&</b>   Must be both values will be true. <b>Answer true</b></li>
+
+                <li><b>logical or     || </b>  From two values one must be true. <b>Answer true</b></li>
+
+                <li><b>logical not    ! </b>   Reverse answer, True will be false and vice versa.</li>
+            </ul>
+        </pre>
+
+    </div>
+
+    <div class="conditional-statement">
+        <ul>
+            <li>
+
+                <h3>Conditional Statement:</h3>
+
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <h3>Checking conditions means determining which condition is true and which condition is false when
+                    there are two or more conditions.</h3>
+            </li>
+            <li>
+                <h3>Conditions check karna matlab agar two conditions hon to un mein se dekhna ke kaunsi true hai aur
+                    kaunsi false.</h3>
+            </li>
+            <li>
+                <h3>Types of Conditional Statement: </h3>
+
+            </li>
+            <ol>
+                <li>
+                    <h3>"if" statement:</h3>
+                    <pre>
+                    <b>Example:</b>
+                    
+                    
+                        let age = 18;
+
+                        if (age >= 18)  {       
+
+                        console.log("you can marriage")
+
+                                    };
+                        Note: Here, We pass & check only one condition.
+
+                 </pre>
+
+                </li>
+
+                <li>
+                    <h3>"if else" statement</h3>
+                    <pre>
+                    <b>Example:</b>
+                    
+
+                        let age = 18;
+
+                        if (age >= 18){
+
+                            console.log("you can marriage");
+
+                        } else {
+
+                            console.log("you can't marriage "); 
+
+                        };
+
+                        Note: Here, We pass & check Two condition and we can also pass more then two
+
+                    <b>Example:</b>
+                    
+
+                        let age = 18;
+
+                        if (age >= 18){
+                            console.log("you can vote");
+
+                            console.log("you can drive");
+
+                            console.log("you can learn Codding");
+
+                        } else {   (Note: else is always used at the end of a conditional statement and can be used only once.)
+
+                            console.log("you can do nothing");
+                        };
+
+
+                    </pre>
+                </li>
+                <li>
+                    <h3>
+                        "else if" Statement:
+                    </h3>
+                    <pre>
+                    <b>Example:</b>
+
+                                let marks = 75;
+
+                                if (marks >=70){                                    (first condition)
+                                    console.log("student is pass with A Grade");
+
+                                } else if (marks >= 60){                            (Second condition)
+                                    console.log("student is pass with B Grade");    
+
+                                } else if (marks >= 50){                            (Third condition)
+                                    console.log("student is pass with C Grade");    
+                                } else {
+                                    console.log("student is Failed");
+                                };
+                                 
+                    </pre>
+                </li>
+
+                <li>
+                    <h3>
+                        Ternary Operators (Same like "else if" statement,but we use it with 3 opprends)
+                    </h3>
+                </li>
+
+                <pre>
+                    <b>Example:</b>
+                            let age = 18;
+
+                            let result = age >= 18? "You can vote" : "you can't vote";
+
+                            console.log(result);
+
+                            Note: Here, we set a condition with age. If age is 18 then vote otherwise can't vote.
+
+                    <b>Example:</b>
+                         
+                            Use condition in which we can check the user input number is multiple of 5 or not.
+
+                            let user = Number(prompt("Please enter the number"));       (Number ka N capital otherwise error)
+
+                            let result  = user%5 === 0 ? "multiple of 5" : "not multiple of 5"; 
+
+                            console.log(result);                            
+                </pre>
+
+
+            </ol>
+
+
+        </ul>
+
+    </div>
+    <div class="loops">
+
+        <ul>
+            <li>
+                <h3>Loops and Types of Loops:</h3>
+            </li>
+
+
+            <pre>
+                <b><li><h3>(1)  For Loop → used when you know how many times the loop should run.</h3></li></b>
+                
+                     Syntax:    //for loop
+
+                       for (start; condition; update){
+                        //code
+                       };
+
+                    Ex:
+                        for (let i = 0 ; i <= 10; i ++){
+                            console.log(i);         //result will be counting from 0 to 10
+                        };
+
+                    Ex:
+                        for (let i = 10; i >= 1 ; i -- ){
+                            console.log(i);         //result will be counting from 10 to 1
+                        };
+                        
+                    Ex: 
+                        let sum = 0;        //with this code we can find the sum of any random number
+                        for (let i = 1; i <=10 ; i ++){
+                            sum += i;
+                            console.log(sum);
+                        };
+                    Ex:
+                        let array = ["usman","maryam","musfirah","abirah","fatimah","rehaan"];
+
+                        for (let i = 0; i < array.length; i++ ){   //array ko read krna
+                            console.log(array[i]);
+                        };
+
+
+
+                <b><li><h3>(2)  For Of Loop → used to loop through values of an array or string.</h3></li></b>
+
+
+                    Syntax:     //for of loop
+
+                       for (let variable of iterable){
+                        //code 
+                       };
+
+                    Ex:         // for of loop with array
+
+                        let array = ["usman","ghani","mano","mani"];
+                        for (let i of array){
+                        console.log(i);
+                        };
+
+                    Syntax:     //for of loop with string
+
+                        let string = "usman";
+                        for (let i of string){
+                        console.log(i);
+                        };
+
+
+                <b><li><h3>(3)  For In Loop → used to loop through keys (indexes/properties) of an object (is can also be used with arrays)</h3></li></b>
+
+                
+                    Example:
+
+                       const object = {
+                        name : "usman",
+                         age : 33,
+                        phone: 12345,
+                        class: "JavaScript",
+
+                        };
+
+                        for (let key in object){
+                            console.log(key);             //key of object will be show (name,age,phone,class)
+                        };
+                          
+
+                        for (let value in object){
+                                console.log(object[value]); //value of object will be show (usman,33,12345,javascript)      
+                        };
+                        
+                        
+                        for (let valueKey in object){
+                            console.log(valueKey, object[valueKey]) //value and key of object will be show here.
+                        };
+
+                        for (let valueKey in object){
+                           let result = `${valueKey} ${object[valueKey]}`;
+                           console.log(result);           // up and down result are same(value and key both will be show in console)
+                        };
+
+                    Example:
+
+                        let array = ["usman","ghani","mano","mani"];
+
+                        for (let index in array){
+                        console.log(index);         //index of array will be show (0,1,2,3)
+                        };
+
+                        for (let value in array){
+                        console.log(array[value]);   //value of array will be show (usman,ghani,mano,mani)
+                        };
+
+                        for (let valueIndx in array){
+                            console.log(valueIndx , array[valueIndx]);   //value and index of array will be show here.
+                        };
+
+                
+
+                <b><li><h3>(4)  While Loop → runs as long as the condition is true.</h3></li></b>
+
+                    Example:
+
+                        let i = 1;
+                        while (i <= 5){
+                        console.log(`mani${i}`);
+                        i++;         // i = i + 1; 
+                        };
+
+(same as up) incrementing the value of i by 1, otherwise it will be infinite loop. 
+Because value of i will be always 1 and condition will be always true.
+                <b><li><h3>(5)  Do While Loop → runs at least once, then checks the condition.</h3></li></b>
+
+                    Example:
+                        
+                            let i = 10;    // condition false hy lakin aik bar code excute surely hoga 
+                            do {
+                                console.log(`mani ${i}`);
+                                i ++;
+                            } while (i <= 5);       // condition 5 hy maximum or i = 10 hy to aik bar code zaror excute ho ga.
+
+                <b><li><h3>(6)  For Await Of Loop → used to handle asynchronous data (Promises) one by one inside async functions.</h3></li></b>
+                
+
+                    Example:
+            </b>
+            </pre>
+        </ul>
+
+
+    </div>
+
+
+
+    <div class="template-literals">
+        <ul>
+            <li>
+                <h3>Template Literals: </h3>
+            </li>
+        </ul>
+        <pre>
+            Template literals are a way to create strings in JavaScript that allow for easier string 
+            interpolation and multi-line strings.
+
+            They are enclosed by backticks (`) instead of single or double quotes.
+
+            Example:
+
+                let name = "usman";
+                let age = 33;
+
+                let result = `My name is ${name} and I am ${age} years old.`;
+
+                console.log(result);     //result will be My name is usman and I am 33 years old.
+
+
+            Example:
+
+                let a = 5;
+                let b = 10;
+
+                let result = `The sum of ${a} and ${b} is ${a + b}.`;
+
+                console.log(result);     //result will be The sum of 5 and 10 is 15.
+
+
+        </pre>
+
+    </div>
+
+    <div class="DOM">
+        <ul>
+            <li>
+                <h3>DOM (Document Object Model):</h3>
+            </li>
+
+            <li>
+                <h3>
+                    Defination: &nbsp; Browser HTML page ko objects ki form main convert karta hai — isi structure ko DOM kehte hain.
+                </h3>
+            </li>
+
+             <li>
+                <h3>
+                    Explanation:&nbsp;Jab browser HTML file load karta hai, to wo uska ek tree structure bana deta hai 
+                    jise JavaScript access kar sakti hai.
+                </h3>
+            </li>
+        </ul>
+
+        <pre>
+            Note: querySelector() humary liy node list return karta hai
+
+                        
+            DOM (Document Object Model)
+
+            what is DOM?---> when the page is loaded, the browser creates a document object model of the page.
+
+            Window Object => the window object an open window in a browser. 
+            it is browser's object not javascript. is automatically created by browser.it is a global object with lots of properties and methods.
+
+            html ko hum javacript main acess kr sakty hain or html k sary element javacript main a kr aik object main convert ho jaty hain or 
+            us object ko hum document kehty hain.document object, window object main available hota hy.
+
+            console.dir ---> is used to print the object (console.dir is also a part of window object)
+
+            document is the representation of html and we can also say document is a model.
+
+            we can also say, node is a object and object is a node.
+
+            run time per jub user website per ho hum javascript k through dynamically changes kr sakty han html main.
+            or hum nay color bhe change kia hy example k liy.
+            document.body.style.background = `green`     (try it with console inspect )
+
+
+
+        </pre>
+
+        <ul>
+            <li>
+                <h3>DOM Selectors:</h3>
+
+            </li>
+                
+            <li>
+
+                <button id="btnsearch4">Example's</button>
+
+            </li>
+
+            <li>
+                <h3>Types of DOM Selectors:</h3>
+            </li>
+
+            <li>
+                <h3>Select by ID = document.getElementById(`Id`); <br> console.log(h1)</h3>
+            </li>
+            <li>
+                <h3>Select by Tag Name = document.getElementsByTagName(`p`); <br> console.log(p)</h3>
+            </li>
+            <li>
+                <h3>Select by Class Name = document.getElementsByClassName(`class`);<br> console.log(h1)</h3>
+            </li>
+
+            <li>
+                <h3>Select by CSS Selector = document.querySelector(`selector`);<br> console.log(h1)</h3>
+            </li>
+            <li>
+                <h3>Select all by CSS Selector = document.querySelectorAll(`selector`);<br> console.log(h1)</h3>
+            </li>
+
+            <h3>Note: We Will use querySelector and querySelectorAll rather than other selectors because 
+                it is more flexible and we can select any element with the help of it.</h3>
+
+        </ul>
+
+
+        <pre>
+            DOM Manipulation means changing the content of the HTML document using JavaScript. 
+            It allows us to dynamically update the content, structure, and style of a web page without reloading it.           
+        </pre>
+        
+        <h3>DOM Manipulation Methods:</h3>
+
+        <button id="btnsearch5">DOM Methods</button> 
+        
+
+
+        <h3>Note:DOM Manipulation insert elements (first create and then Select and then insert the element)</h3>
+
+        <pre>
+
+
+        Example:
+        
+            // First, we create a button element using createElement().
+
+            let button = document.createElement("button");
+
+            // Here, we give text to the button.
+
+            button.innerText = "Mani Bhai!";
+
+            // Here, we print the button in the console.
+
+            console.log(button);
+
+
+            // The button has been created, but it is not yet visible on the webpage.
+            // Now we select the parent element where we want to insert the button,
+            // and then we append the button to it.
+
+            document.body.appendChild(button);     //Here, we are appending the button to the body of the document.
+
+            let btn = document.querySelector("button");
+
+            btn.style.background = "green";        //Here, we are changing the background color of the button to green.
+
+        </pre>
+
+    </div>
+
+    <div class="attribute">
+        <ul>
+            <li>
+                <h3>Attributes:</h3>
+                <h3>Attributes are used to provide additional information about an element. </h3>
+            </li>
+        </ul>
+
+        <pre> <code>
+            They are always specified in the opening tag of an element and usually come in name/value pairs like name="value".
+
+            Example:
+
+                &lt;a href="https://www.google.com" target="_blank"&gt; Google&lt;/a&gt;
+
+                In this example, "href" is an attribute that specifies the URL of the page the link goes to,
+                and "target" is an attribute that specifies where to open the linked document.
+
+            setAttribute() method is used to set the value of an attribute on the specified element.
+
+            Example:
+
+                let link = document.querySelector("a");
+
+                link.setAttribute("href", "https://www.facebook.com"); 
+
+                //Here, we are changing the href attribute of the link to "https://www.facebook.com".
+
+                link.setAttribute("target", "_blank");    
+
+                //Here, we are changing the target attribute of the link to "_blank" which means it will open in a new tab.
+
+            getAttribute() method is used to get the value of an attribute on the specified element.
+
+            Example:
+
+                let link = document.querySelector("a");
+
+                let hrefValue = link.getAttribute("href"); 
+
+                console.log(hrefValue);     
+
+                //Here, we are getting the value of the href attribute of the link and printing it in the console.
+
+            </code>
+        </pre>
+    </div>
+
+    <div class="event">
+        
+        <ul>
+            <li>
+                <h3>Events:</h3>
+                <h3>Events are actions that occur in the browser, such as a user clicking a button, hovering over an element, or submitting a form. </h3>
+                <h3>Events in javaScript     (The change in the state of an object is known as an Event)</h3>
+            </li>
+        </ul>
+
+        <pre>
+            <b>Note: We can use JavaScript to respond to these events and create interactive web pages.</b>
+
+            Example:
+
+                let button = document.querySelector("button");
+
+                button.addEventListener("click", function() {
+                    alert("Button was clicked!");
+                });
+
+                //Here, we are adding a click event listener to the button. When the button is clicked, 
+                an alert will pop up with the message "Button was clicked!".
+
+        </pre>
+        <button id="btnsearch6">Events Example</button>
+
+    </div>
+
+
+
+
+
+    <script src="js_notes.js"></script>
+
+
+
+</body>
+
+</html>

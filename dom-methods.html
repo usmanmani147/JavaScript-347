@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Methods</title>
+  </head>
+  <body>
+    <h1>Methods of DOM Manipulation:</h1>
+          <h2>Nodes:</h2>
+
+    <pre>
+
+          <h3>&nbsp;&nbsp;&nbsp;Note: HTML page ka har item DOM me “node” kehlata hai.</h3>
+          <h3>&nbsp;&nbsp;&nbsp;Har element node hota hai, lekin har node element nahi hota.</h3>
+          <h3>&nbsp;&nbsp;&nbsp;DOM me nodes ko manipulate karne ke liye kuch methods hote hain.</h3>
+          
+
+     <ul><li>node.append()      adds at the end of node     (inside)</li></ul>
+
+          Example:
+
+          &lt;div class="box"&gt;      
+               &lt;p&gt;This is a paragraph&lt;/p&gt;
+               &lt;h3&gt;Hello, World!&lt;/h3&gt; 
+          &lt;/div&gt;
+
+          let abc = document.querySelector('.box');
+          
+          abc.append("paragraph 2 is added ") // This will add the text at the end of the div.
+
+          Result:
+                This is a paragraph
+                Hello, World!
+                paragraph 2 is added    // This will be added at the end of the div.
+
+
+     <ul><li>node.prepend()     adds at the start of node   (inside)</li></ul>
+
+          Example:
+
+          &lt;div class="box"&gt;      
+               &lt;p&gt;This is a paragraph&lt;/p&gt;
+               &lt;h3&gt;Hello, World!&lt;/h3&gt;
+          &lt;/div&gt;
+
+          let abc = document.querySelector('.box');
+          
+          abc.prepend("paragraph 2 is added ") // This will add the text at the start of the div.
+
+          Result:
+                paragraph 2 is added    // This will be added at the start of the div.
+                This is a paragraph
+                Hello, World!
+
+
+     <ul><li>node.before()      adds before the node        (outside)</li></ul>
+
+          Example:  
+          &lt;div class="box"&gt;      
+               &lt;p&gt;This is a paragraph&lt;/p&gt;
+               &lt;h3&gt;Hello, World!&lt;/h3&gt;
+          &lt;/div&gt;
+          let abc = document.querySelector('.box');
+
+          abc.before("paragraph 2 is added ") // This will add the text before the div.
+          Result:
+                paragraph 2 is added  // This will be added before the div.
+                This is a paragraph
+                Hello, World!
+
+     <ul><li>node.after()       adds after the node         (outside)</li></ul>
+
+          Example:  
+          &lt;div class="box"&gt;      
+               &lt;p&gt;This is a paragraph&lt;/p&gt;
+               &lt;h3&gt;Hello, World!&lt;/h3&gt;
+          &lt;/div&gt;
+          let abc = document.querySelector('.box');
+
+          abc.after("paragraph 2 is added ") // This will add the text after the div.
+          Result:
+                This is a paragraph
+                Hello, World!
+                paragraph 2 is added  // This will be added after the div.
+     
+     <ul><li>node.remove()        removes the node</li></ul>
+
+          Example:  
+          &lt;div class="box"&gt;      
+               &lt;p&gt;This is a paragraph&lt;/p&gt;
+               &lt;h3&gt;Hello, World!&lt;/h3&gt;
+          &lt;/div&gt;
+          let abc = document.querySelector('.box');
+
+          abc.remove() // This will remove the entire div along with its content.
+          Result:
+                (Nothing will be displayed as the entire div is removed.) 
+
+
+    <ul><li>node.replaceWith()   replaces the node with another node</li></ul>
+          Example:  
+          &lt;div class="box"&gt;      
+               &lt;p&gt;This is a paragraph&lt;/p&gt;
+               &lt;h3&gt;Hello, World!&lt;/h3&gt;
+          &lt;/div&gt;
+          let abc = document.querySelector('.box');
+
+          abc.replaceWith("This is a new div") // This will replace the entire div with the new text.
+          
+          Result:
+                This is a new div  // The original div is replaced with this new text.
+
+
+    <ul><li>Finding the tagName of an selected element</li></ul>
+
+          Example:  
+          &lt;div class="box"&gt;      
+               &lt;p&gt;This is a paragraph&lt;/p&gt;
+               &lt;h3&gt;Hello, World!&lt;/h3&gt;
+          &lt;/div&gt;
+          let abc = document.querySelector('.box');
+
+          console.log(abc.tagName) // This will log the tag name of the selected element in uppercase.
+
+          Result:
+               DIV  // The tag name of the selected element is logged in uppercase.
+
+               Note: If you want to get the tag name in lowercase, you can use abc.tagName.toLowerCase().
+          Result:  
+               div  // The tag name of the selected element is logged in lowercase.
+
+     <ul><li>Finding the innerText of an element</li></ul>
+          Example:  
+          &lt;div class="box"&gt;      
+               &lt;p&gt;This is a paragraph&lt;/p&gt;
+               &lt;h3&gt;Hello, World!&lt;/h3&gt;
+          &lt;/div&gt;
+          let abc = document.querySelector('.box');
+
+          console.log(abc.innerText) // This will log the text content of the selected element and all its children.
+
+          Result:
+               This is a paragraph
+               Hello, World!  // The text content of the selected element and all its children is logged.
+
+     <ul><li>Finding the innerHTML of an element</li></ul>
+          Example:
+          &lt;div class="box"&gt;      
+               &lt;p&gt;This is a paragraph&lt;/p&gt;
+               &lt;h3&gt;Hello, World!&lt;/h3&gt;
+          &lt;/div&gt;
+          let abc = document.querySelector('.box');
+          console.log(abc.innerHTML) // This will log the HTML content of the selected element and all its children.
+          Result:
+               &lt;p&gt;This is a paragraph&lt;/p&gt;
+               &lt;h3&gt;Hello, World!&lt;/h3&gt;  // The HTML content of the selected element and all its children is logged.    
+     
+     
+     
+     </pre>
+
+     
+
+     <div class="Node-Types">
+          <h2>Node Types:</h2>
+          <pre>
+               <ul><li>Element Node</li></ul>
+
+               Example:
+
+               &lt;div class="box"&gt;      
+                    &lt;p&gt;This is a paragraph&lt;/p&gt;
+                    &lt;h3&gt;Hello, World!&lt;/h3&gt;
+               &lt;/div&gt;   
+               In this example, the div, p, and h3 are all element nodes.
+
+               <ul><li>Text Node</li></ul>
+               Example:
+               &lt;div class="box"&gt;      
+                    &lt;p&gt;This is a paragraph&lt;/p&gt;
+                    &lt;h3&gt;Hello, World!&lt;/h3&gt;
+               &lt;/div&gt;   
+               In this example, the text "This is a paragraph" and "Hello, World!" are text nodes.
+
+               <ul><li>Comment Node</li></ul>
+               Example:
+               &lt;div class="box"&gt;      
+                    &lt;p&gt;This is a paragraph&lt;/p&gt;
+                    &lt;h3&gt;Hello, World!&lt;/h3&gt;
+                    &lt;!-- This is a comment --&gt;
+               &lt;/div&gt;   
+               In this example, the comment "This is a comment" is a comment node.   
+
+
+          </pre>
+
+          <h3>childNodes and children:</h3>
+
+     <pre>
+               childNodes: returns a live NodeList of all child nodes of the specified node, including elements, text nodes, and comment nodes.
+
+               children: returns a live HTMLCollection of only the child elements of the specified node, excluding text nodes and comment nodes.
+
+               Example:
+               &lt;div class="box"&gt;      
+                    &lt;p&gt;This is a paragraph&lt;/p&gt;
+                    &lt;h3&gt;Hello, World!&lt;/h3&gt;
+                    &lt;!-- This is a comment --&gt;
+               &lt;/div&gt;   
+               let abc = document.querySelector('.box');
+
+               console.log(abc.childNodes) // This will log a NodeList of all child nodes of the div, including text nodes and comment nodes.
+               Result:
+                    NodeList(5) [p, text, h3, text, comment]  // The NodeList includes the p element, 
+                    text nodes (for whitespace), h3 element, and the comment node.
+
+               console.log(abc.children) // This will log an HTMLCollection of only the child elements of the div, 
+               excluding text nodes and comment nodes.
+               Result:
+
+               HTMLCollection(2) [p, h3]  // The HTMLCollection includes only the p and h3 elements as they are the child elements of the div.
+     </pre>
+
+     </div>
+     
+     <div class="css classes controls">
+
+          <h2>CSS Classes and Controls:</h2>
+          <pre>
+               <ul><li>classList.add()      adds a class to the element</li></ul>
+
+               Example:
+
+                    &lt;div class="box"&gt;      
+                         &lt;p&gt;This is a paragraph&lt;/p&gt;
+                         &lt;h3&gt;Hello, World!&lt;/h3&gt;
+                    &lt;/div&gt;
+
+               let abc = document.querySelector('.box');
+
+               abc.classList.add('new-class') // This will add the class "new-class" to the div element.
+
+               Result:
+                    &lt;div class="box new-class"&gt;      
+                         &lt;p&gt;This is a paragraph&lt;/p&gt;
+                         &lt;h3&gt;Hello, World!&lt;/h3&gt;
+                    &lt;/div&gt;   // The div element now has both "box" and "new-class" as its classes.
+
+               <ul><li>classList.remove()   removes a class from the element</li></ul>
+
+               Example:
+
+                    &lt;div class="box new-class"&gt;      
+                         &lt;p&gt;This is a paragraph&lt;/p&gt;
+                         &lt;h3&gt;Hello, World!&lt;/h3&gt;
+                    &lt;/div&gt;   
+
+               let abc = document.querySelector('.box'); 
+                  
+               abc.classList.remove('new-class') // This will remove the class "new-class" from the div element.
+               Result:
+                    &lt;div class="box"&gt;      
+                         &lt;p&gt;This is a paragraph&lt;/p&gt;
+                         &lt;h3&gt;Hello, World!&lt;/h3&gt;
+                    &lt;/div&gt;   // The div element now only has "box" as its class.
+               <ul><li>classList.toggle()   toggles a class on the element</li></ul>
+               Example:
+                    &lt;div class="box"&gt;      
+                         &lt;p&gt;This is a paragraph&lt;/p&gt;
+                         &lt;h3&gt;Hello, World!&lt;/h3&gt;
+                    &lt;/div&gt;   
+               let abc = document.querySelector('.box');
+
+               abc.classList.toggle('new-class') // This will add the class "new-class" to the div element if it doesn't have it, or remove it if it does.
+               Result:
+
+                    &lt;div class="box new-class"&gt;      
+                         &lt;p&gt;This is a paragraph&lt;/p&gt;
+                         &lt;h3&gt;Hello, World!&lt;/h3&gt;
+                    &lt;/div&gt;   // The div element now has "new-class" added to its classes.  
+
+               abc.classList.toggle('new-class') // This will remove the class "new-class" from the div element since it already has it.
+               Result:
+
+                    &lt;div class="box"&gt;      
+                         &lt;p&gt;This is a paragraph&lt;/p&gt;
+                         &lt;h3&gt;Hello, World!&lt;/h3&gt;
+                    &lt;/div&gt;   // The div element now has "new-class" removed from its classes.
+               
+
+          </pre>
+     </div>
+
+
+  </body>
+</html>

@@ -1,0 +1,146 @@
+
+body{
+    margin: 0%;
+    border: solid rgb(197, 103, 15) 3px;
+}
+
+
+.headerdiv{
+    text-align: center;
+    color: yellow;
+    background-color: rgb(58, 20, 164);
+    text-transform: capitalize;
+    overflow: hidden;
+    padding-top: 1rem;
+}
+
+.heading{
+    display: flex;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    text-transform: capitalize;
+
+}
+
+.h1:hover,.h2:hover,.h3:hover{
+            opacity: 0.5;
+            cursor: pointer;
+            background-color: rgb(33, 12, 221);
+            color: red; 
+            border-radius: 3rem;
+
+}
+.h1,.h2,.h3{
+    padding: 15px;
+
+}
+
+.body{
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 3rem;
+    border-color: black;
+    border-width: 1rem;
+    border-style: solid;
+
+}
+
+#html:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+#css:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+#js:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+
+#html,#css,#js{
+    border: 3px solid purple;
+    border-radius: 50%;
+
+}
+
+
+body{
+    margin: 0%;
+    border: solid rgb(197, 103, 15) 3px;
+}
+
+
+.headerdiv{
+    text-align: center;
+    color: yellow;
+    background-color: rgb(58, 20, 164);
+    text-transform: capitalize;
+    overflow: hidden;
+    padding-top: 1rem;
+}
+
+.heading{
+    display: flex;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    text-transform: capitalize;
+
+}
+
+.h1:hover,.h2:hover,.h3:hover{
+            opacity: 0.5;
+            cursor: pointer;
+            background-color: rgb(33, 12, 221);
+            color: red; 
+            border-radius: 3rem;
+
+}
+.h1,.h2,.h3{
+    padding: 15px;
+
+}
+
+.body{
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 3rem;
+    border-color: black;
+    border-width: 1rem;
+    border-style: solid;
+
+}
+
+#html:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+#css:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+#js:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+
+#html,#css,#js{
+    border: 3px solid purple;
+    border-radius: 50%;
+
+}
+
+
+
+
+ 
